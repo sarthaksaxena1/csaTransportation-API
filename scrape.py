@@ -177,7 +177,7 @@ def GetLocation(FROM):
     }
 
     response = requests.request("GET", url, headers=headers, data=payload)
-
+    # print (response.json())
     return response.json()['data'][0]['ZONE_ID']
 
 
