@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h2>Get Rate Quote </h2>
+    <form action="/fetch" method="GET">
+      <div class="form-group">
+        <label for="To">From</label>
+        <input type="text" name="from" id="name" placeholder="FROM" required minlength="3" maxlength="25" />
+      </div>
+      <div class="form-group">
+        <label for="TO">To</label>
+        <input type="text" name="to" id="email" placeholder="TO" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Length</label>
+        <input type="number" name="length" id="email" placeholder="Length" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Width</label>
+        <input type="number" name="width" id="email" placeholder="Width" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Height</label>
+        <input type="number" name="height" id="email" placeholder="Height" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Weight</label>
+        <input type="number" name="weight" id="email" placeholder="Weight" required />
+      </div>
+      <div class="form-group">
+        <button type="submit" class="submit"><i class="far fa-paper-plane"></i>Fetch Result</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
